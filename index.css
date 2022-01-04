@@ -1,0 +1,152 @@
+*{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+}
+
+body{
+    background-color: #ecf0f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    width: 30%;
+    min-height: 60%;
+    background-color: #ecf0f3;
+    border-radius: 1rem;
+    box-shadow: 15px 15px 20px #cbced1, -13px -13px 20px #fff;
+    overflow: hidden;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    /* flex-direction: column; */
+    height: 5rem;
+    /* background-color: #e4e4e4; */
+    color: gray;
+    text-align: center;
+}
+.nav h1{
+    
+}
+.search{
+    width: 70%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.search img{
+    width: 12%;
+    height: 12%;
+    object-fit: cover;
+    /* border:1px solid #fff; */
+    box-shadow:   2px 2px 8px #cbced1,  -2px -2px 8px #fff;
+    cursor: pointer;
+    background-color: transparent;
+
+}
+.search img:hover{
+    
+    box-shadow:  inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+}
+
+#input{
+width: 80%;
+min-height: 1.75rem;
+border: none;
+outline: none;
+border-radius: 10px;
+color: rgb(78, 209, 181);
+padding: 15px;
+background-color: #ecf0f3;
+/* border-bottom: 2px  solid; */
+box-shadow:  inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+}
+#btn{
+width: 30%;
+padding: 10px;
+border-radius: 5px;
+outline: none;
+border: none;
+font: 1.5rem ;
+font-weight: 600;
+background-color: #fff;
+}
+.content{
+ display: flex;
+justify-content: center;
+width: 100%;
+height: 25.8rem;
+flex-direction: column;
+/* background-color: black; */
+/* align-items: center; */
+
+}
+.content .temp{
+    width: 100%;
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+   
+}
+.temp h1{
+    font-size: 5rem;
+    font-family: monospace;
+    font-weight: 800;
+    color: rgb(78, 209, 181);
+    transition: 2s;
+
+}
+#placeSpan{
+    padding-left: 2rem;
+    width: 100%;
+    color: rgb(78, 209, 181);
+    display: flex;
+    justify-content: center;
+
+}
+#placeSpan h1{
+    font-family: monospace;
+    font-weight: 800;
+    letter-spacing: 1px;
+    
+}
+.icon{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+@media screen and (max-width: 1050px){
+
+    .container{
+        width: 50%;
+        min-height: 65%;
+    }
+    
+}
+@media screen and (max-width: 650px){
+
+    .container{
+        width: 80%;
+        min-height:60%;
+    }
+    
+}
+@media screen and (max-width: 350px){
+
+    .container{
+        width: 90%;
+        min-height:60%;
+    }
+    
+}
